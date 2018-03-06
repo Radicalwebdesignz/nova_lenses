@@ -3,8 +3,20 @@
 		border-bottom: 2px solid $mainBlue;
 
 		li > a:hover {
-			color:$mainBlue !important;
+			color:black !important;
 		}
 
 	}
+
+	&--navbar-color {
+		background-color: rgba($mainBlue, 0.8);
+	}
+
+	&--nav-link-color {
+		color: #fff !important;
+	}
+}
+
+.active {
+	color:black !important;
 }

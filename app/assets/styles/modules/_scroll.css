@@ -4,7 +4,8 @@
     margin:0 auto;
     position:fixed;
     bottom:20px;
-    right:10px; 
+    right:10px;
+    z-index: 2; 
 }
 
 .scroll {
@@ -20,7 +21,7 @@
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
-    -o-transition: 0.5s;        
+    -o-transition: 0.5s;
 }
 
 .scroll:hover {
@@ -42,5 +43,5 @@
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
-    -o-transition: 0.5s;    
+    -o-transition: 0.5s;  
 }

@@ -33,5 +33,20 @@ $(function(){
     })
 });
 
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+            $(".primary-navbar--border-bottom").addClass("primary-navbar--navbar-color fixed-top");
+            $(".nav-item > a").addClass("primary-navbar--nav-link-color");
+        }
+        else {
+            $(".primary-navbar--border-bottom").removeClass("primary-navbar--navbar-color fixed-top");
+            $(".nav-item > a").removeClass("primary-navbar--nav-link-color");
+        }
+        
+    })
+});
+
 
 
