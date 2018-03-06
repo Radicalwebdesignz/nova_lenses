@@ -48,5 +48,34 @@ $(document).ready(function(){
     })
 });
 
+$(".lazyload").on("load", function() {
+    Waypoint.refreshAll();
+});
 
 
+// var waypoint = new Waypoint({
+//   element: document.getElementById('products'),
+//   handler: function() {
+//     $('#products').addClass("reveal-item--is-visible");
+//   },
+//   offset:"75%"
+// });
+
+// var waypoint = new Waypoint({
+//   element: document.getElementById('treatments'),
+//   handler: function() {
+//     $('#treatments').addClass("reveal-item--is-visible");
+//   },
+//   offset:"75%"
+// });
+
+$('.waypoint').each(function() {
+    var $el = $(this);
+    var waypoint = new Waypoint({
+    element: $el,
+    handler: function() {
+        $el.addClass("reveal-item--is-visible");
+    },
+    offset:"75%"
+    });
+});
