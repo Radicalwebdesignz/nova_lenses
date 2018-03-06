@@ -1,0 +1,8 @@
+.social {
+	&__icons-hover {
+		transition: all 0.3s;
+	}
+	&__icons-hover:hover {
+		opacity:0.5;
+	}
+}

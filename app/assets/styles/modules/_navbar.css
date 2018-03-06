@@ -1,0 +1,10 @@
+.primary-navbar {
+	&--border-bottom {
+		border-bottom: 2px solid $mainBlue;
+
+		li > a:hover {
+			color:$mainBlue !important;
+		}
+
+	}
+}
